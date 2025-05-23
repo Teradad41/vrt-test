@@ -9,7 +9,7 @@
     "lint": "next lint",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "vrt:snapshot": "storycap --serverCmd \"pnpm dlx http-server storybook-static -p 6006\" http://localhost:6006",
+    "vrt:snapshot": "storycap http://localhost:6006",
     "vrt:run": "reg-suit run"
   },
   "dependencies": {

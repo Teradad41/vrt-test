@@ -38,6 +38,12 @@ jobs:
       - name: Build Storybook
         run: pnpm run build-storybook
       - name: Run Storycap
-        run: pnpm run vrt:snapshot
+        run: |
+          # Start Storybook server in the background
+          pnpm run storybook &
+          # Wait for the server to start
+          sleep 10
+          # Run storycap
+          pnpm run vrt:snapshot
       - name: Run reg-suit
         run: pnpm run vrt:run
