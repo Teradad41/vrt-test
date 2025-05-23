@@ -17,6 +17,9 @@ importers:
       react-dom:
         specifier: ^19.0.0
         version: 19.1.0(react@19.1.0)
+      styled-jsx:
+        specifier: ^5.1.2
+        version: 5.1.6(@babel/core@7.27.1)(react@19.1.0)
     devDependencies:
       '@chromatic-com/storybook':
         specifier: ^3
